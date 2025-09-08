@@ -28,6 +28,7 @@ const deliveryPartnerSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   phone: { type: Number, required: true, unique: true },
   role: { type: String, enum: ["DeliveryPartner"], default: "DeliveryPartner" },
+  password: { type: String, required: true },
   liveLocation: {
     latitude: { type: Number },
     longitude: { type: Number },
